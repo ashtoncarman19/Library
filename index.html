@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My Library</title>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="header-container">
+        <div>My Library</div>
+    </div>
+
+    <div class="content-container">
+        <div id="newBtn-Container">
+           <button id="newBtn">+ Add Book</button>
+        </div>
+        <div id="popUp">
+            <form id='form' action='/script.js'>
+                <legend>New Book</legend>
+                <span class="close">&times;</span>
+                <div id='textInput'> 
+                    <p><input type='text' id='title' name='title' placeholder='Title'></p>
+                    <p><input type='text' id='author' name='author' placeholder='Author'></p>
+                    <p><input type='text' id='pages' name='pages' placeholder='Pages'></p>
+                </div>
+                <div id='checkBox'>
+                    <p><label>Read: </label><input type='checkbox' id='read' name='read' value='yes'></p>
+                </div>
+                <button type='submit' form='form' id='addBtn'>Add</button>
+            </form>
+        </div>
+        <div class="cards-container">
+            <div class="card">
+                <div class="title">"To kill a Mockingbird"</div>
+                <div class="author">Harper Lee</div>
+                <div class="pages">281 pages</div>
+                <button class="read">Read</button>
+                <button class="remove">Remove</button>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="footer">
+        <div>Made By Ashton Carman</div>
+        <img src="icons/Github.png" alt="Github Logo">
+    </div>
+</div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
